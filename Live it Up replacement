@@ -1,0 +1,17 @@
+function replaceTextInDocument() {
+  var doc = DocumentApp.getActiveDocument();
+  var body = doc.getBody();
+
+  // Define the search and replace text
+  var searchText1 = "Ensō";
+  var replaceText1 = "Live it Up";
+  var searchText2 = "supergreens";
+  var replaceText2 = "Super Greens";
+  var searchText3 = "Supergreens";
+  var replaceText3 = "Super Greens";
+
+  // Perform the search and replace in the document
+  body.replaceText(searchText1, replaceText1);
+  body.replaceText(searchText2, replaceText2);
+  body.replaceText(searchText3, replaceText3);
+}
